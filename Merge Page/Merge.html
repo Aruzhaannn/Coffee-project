@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Merge.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fontawesome.com/icons/cart-shopping?f=classic&s=solid">
+    <title>Магазин</title>
+</head>
+<body>
+        <header>
+            <div class="logo">
+                <img src="Coffeelo-logo.png" alt="">
+            </div>   
+            <div id="search-container">
+                <input type="search" id="search-input" placeholder="Найдите название продукта здесь…">
+                <button id="search">Поиск</button>
+            </div>
+            
+            <div class="sign">
+                <div class="heading">
+                    <a href="../Main Page/about.html">Главная страница</a>
+                </div>
+
+                <div class="shopping">
+                    <p class="cart"><i class="fa-solid fa-cart-shopping"></i></p>
+                    <span class="quantity">0</span>
+                </div>
+                    <a class="signin" href="../Log_Reg Page/LogReg.html">Войти</a>
+            </div>
+            <label for="btn" class="icon">
+                <span class="fa fa-bars"></span>
+            </label>
+        </header>
+
+
+
+
+        <div class="container">
+            <div class="wrapper">
+                <div id="buttons">
+                    <button class="button-value" onclick="filterProduct('All')">Все</button>
+                    <button class="button-value" onclick="filterProduct('Coffee')">Кофе</button>
+                    <button class="button-value" onclick="filterProduct('Eats')">Ест</button>
+                    <button class="button-value" onclick="filterProduct('Dessert')">Десерт</button>
+                    <button class="button-value" onclick="filterProduct('Others')">Другие</button>
+                </div>
+                <!-- <div id="products"></div> -->
+                <div class="list">
+                
+                </div>
+            </div>  
+        </div>
+
+    <div class="card">
+        <h1>Карта</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping">Закрывать</div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img class="footer-img" src="../Merge Page/Coffeelo-logo.png" alt="">
+                <p>Coffeelo – Ваш незаменимый помощник в кофейне. Легко находите, собирайте и управляйте бонусными картами, наслаждаясь вознаграждениями от любимых кофеен — всё в одном удобном приложении.</p>
+            </div>
+            <div class="col">
+                <h3>Офис</h3>
+                <p>Дорога ITPL</p>
+                <p>Казахстан</p>
+                <p>Алматы, Казахстан</p>
+                <p class="email-id">amirgo@mail.ru</p>
+                <h4>+7 (771) 794 45 26</h4>
+            </div>
+            <div class="col">
+                <h3>Links</h3>
+                <ul class="links-menu">
+                    <li><a href="../Main Page/about.html">Главная</a></li>
+                    <li><a href="../Main Page/about.html">О нас</a></li>
+                    <li><a href="../Main Page/about.html">Меню</a></li>
+                    <li><a href="../Main Page/about.html">Отзыв</a></li>
+                    <li><a href="../Main Page/about.html">Галерея</a></li>
+                    <li><a href="../Main Page/about.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Информационный бюллетень</h3>
+                <form class="send-email"> 
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email..." required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Простые уроки c 2025 г. — Все права защищены</p>
+    </footer>
+
+<script src="Merge.js"></script>
+
+</body>
+</html>
